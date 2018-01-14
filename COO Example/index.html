@@ -77,84 +77,63 @@ $(window).on("load",function(){
 });
 </script>
 
-
-<!-- Dev -->
-<!-- 
-<script>
-var cameraImageEdge = 'https://louisville.edu/resources/constructioncamera/image3';
-var buffer = {};
-
-function preloadEdge(){
-	buffer = new Image();
-	buffer.src = cameraImageEdge + '?' + (new Date()).getTime();
-	buffer.onload = function() {
-		setTimeout(preloadEdge, 1000); // 1 second refresh
-		document.getElementById('sacImage-Edge').src = buffer.src;
-	}
-}
-
-if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); }
-});
-</script>
- -->
-<!-- --- -->
-
-
 </head>
 <body>
 
-
 <div id="page">
 
-<!-- ------ Primary Navigation ------ -->
+<!-- ---------------------------------------------------- -->
+<!-- [PRIMARY NAVIGATION] -->
+<!-- ---------------------------------------------------- -->
+
 
 <nav id="navigation" class="navbar navbar-default navbar-fixed-top col-xs-12">
 	
-<div class="navbar-header col-xs-3 col-sm-1">
-	<a class="navbar-brand" href="http://louisville.edu"><img src="img/ULlogo.png" alt="Brand"></a>
-</div>
-    
-<div class="nav navbar-nav col-xs-6">
-	<div class="visible-xs site-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer';">Chief Operating Officer</div>
-	<div class="hidden-xs site-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer';">Office of the Chief Operating Officer</div>
-	<div class="arrow-down"></div>
-</div>
+	<div class="navbar-header col-xs-3 col-sm-1">
+		<a class="navbar-brand" href="http://louisville.edu"><img src="img/ULlogo.png" alt="Brand"></a>
+	</div>
+	
+	<div class="nav navbar-nav col-xs-6">
+		<div class="visible-xs site-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer';">Chief Operating Officer</div>
+		<div class="hidden-xs site-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer';">Office of the Chief Operating Officer</div>
+		<div class="arrow-down"></div>
+	</div>
 
-<div class="nav hidden-xs col-sm-3">
-	<a class="social-icon" href="http://youtube.com/user/univoflouisville"><img src="img/icons/youtubebutton.png" alt="Link to the University of Louisville YouTube page"></a>
-	<a class="social-icon" href="http://twitter.com/UofLCOO"><img src="img/icons/twitterbutton.png" alt="Link to the University of Louisville Twitter page"></a>
-</div>
+	<div class="nav hidden-xs col-sm-3">
+		<a class="social-icon" href="http://youtube.com/user/univoflouisville"><img src="img/icons/youtubebutton.png" alt="Link to the University of Louisville YouTube page"></a>
+		<a class="social-icon" href="http://twitter.com/UofLCOO"><img src="img/icons/twitterbutton.png" alt="Link to the University of Louisville Twitter page"></a>
+	</div>
  
-<div class="navbar-collapse col-xs-3">
-	<a id="dropdown" class="dropdown-toggle pull-right" data-toggle="dropdown"><img src="img/icons/menubutton.png" alt="Opens a dropdown menu"></a>
-	<ul class="dropdown-menu top-nav pull-right" aria-labelledby="dropdown">
-		<li><a role="menuitem" href="/chiefoperatingofficer/about-us">About Us</a></li>
-		<li><a role="menuitem" href="/chiefoperatingofficer/projects/projects-1">Projects</a></li>
-		<li><a role="menuitem" href="/chiefoperatingofficer/people">People</a></li>
-		<li><a role="menuitem" href="/chiefoperatingofficer/media-archives">Media Archives</a></li>
-		<li><a role="menuitem" href="/chiefoperatingofficer/links">Links</a></li>
-		<li><a role="menuitem" href="http://www.louisville.edu/cgi-bin/uofl.mail?cooadmin@louisville.edu">Contact Us</a></li>
-		<li class="divider visible-xs"></li>
-		<li class="visible-xs"><a role="menuitem" href="http://youtube.com/user/univoflouisville">Youtube</a></li>
-		<li class="visible-xs"><a role="menuitem" href="http://twitter.com/UofLCOO">Twitter</a></li>
-	</ul>
-</div>
+	<div class="navbar-collapse col-xs-3">
+		<a id="dropdown" class="dropdown-toggle pull-right" data-toggle="dropdown"><img src="img/icons/menubutton.png" alt="Opens a dropdown menu"></a>
+		<ul class="dropdown-menu top-nav pull-right" aria-labelledby="dropdown">
+			<li><a role="menuitem" href="/chiefoperatingofficer/about-us">About Us</a></li>
+			<li><a role="menuitem" href="/chiefoperatingofficer/projects/projects-1">Projects</a></li>
+			<li><a role="menuitem" href="/chiefoperatingofficer/people">People</a></li>
+			<li><a role="menuitem" href="/chiefoperatingofficer/media-archives">Media Archives</a></li>
+			<li><a role="menuitem" href="/chiefoperatingofficer/links">Links</a></li>
+			<li><a role="menuitem" href="http://www.louisville.edu/cgi-bin/uofl.mail?cooadmin@louisville.edu">Contact Us</a></li>
+			<li class="divider visible-xs"></li>
+			<li class="visible-xs"><a role="menuitem" href="http://youtube.com/user/univoflouisville">Youtube</a></li>
+			<li class="visible-xs"><a role="menuitem" href="http://twitter.com/UofLCOO">Twitter</a></li>
+		</ul>
+	</div>
   
-
-
 </nav>
 
-<!-- ------ Secondary Navigation ------ -->
+<!-- ---------------------------------------------------- -->
+<!-- [SECONDARY NAVIGATION] -->
+<!-- ---------------------------------------------------- -->
 
 <div id="secondary-navigation" class="hidden-xs col-md-10">
 
-<ul class="nav nav-pills hidden-xs">
-	<li class="active"><a id="bac-bg" class="sec-nav third-two-lines" href="javascript:void(0)" onclick="showBacDiv()"><span>Welcoming ESPN to Campus</span></a></li>
-	<li><a id="sac-bg" class="sec-nav fourth-two-lines" href="javascript:void(0)" onclick="showSacDiv()"><span>The SAC Transformation</span></a></li>
-	<li><a id="busops-bg" class="sec-nav second-two-lines" href="javascript:void(0)" onclick="showBusDiv()"><span>Building Student Success</span></a></li>
-	<li><a id="ped-bg" class="sec-nav first-two-lines" href="javascript:void(0)" onclick="showPedDiv()"><span>The Future of Pediatric Care</span></a></li>
-	<li><a id="stad-bg" class="sec-nav fifth-two-lines" href="javascript:void(0)" onclick="showStadDiv()"><span>360 Degrees of Football</span></a></li>
-</ul>
+	<ul class="nav nav-pills hidden-xs">
+		<li class="active"><a id="bac-bg" class="sec-nav third-two-lines" href="javascript:void(0)" onclick="showBacDiv()"><span>Welcoming ESPN to Campus</span></a></li>
+		<li><a id="sac-bg" class="sec-nav fourth-two-lines" href="javascript:void(0)" onclick="showSacDiv()"><span>The SAC Transformation</span></a></li>
+		<li><a id="busops-bg" class="sec-nav second-two-lines" href="javascript:void(0)" onclick="showBusDiv()"><span>Building Student Success</span></a></li>
+		<li><a id="ped-bg" class="sec-nav first-two-lines" href="javascript:void(0)" onclick="showPedDiv()"><span>The Future of Pediatric Care</span></a></li>
+		<li><a id="stad-bg" class="sec-nav fifth-two-lines" href="javascript:void(0)" onclick="showStadDiv()"><span>360 Degrees of Football</span></a></li>
+	</ul>
 
 </div><!-- /secondary-navigation -->
 
@@ -175,11 +154,15 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 
 </div><!-- /mobile-nav -->
 
-<!-- --------------------------------- Parallax ---------------------------------- -->
+<!-- ---------------------------------------------------- -->
+<!-- [PARALLAX] -->
+<!-- ---------------------------------------------------- -->
 
 <div class="parallax-wrap col-xs-12">
 
-<!-- ----------------------------- Business Operations --------------------------- -->
+<!-- ---------------------------------------------------- -->
+<!-- BUSNIESS OPERATIONS -->
+<!-- ---------------------------------------------------- -->	
 
 <div id="busops-parallax" class="parallax-container col-xs-12">
 
@@ -196,7 +179,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 
 </div><!-- /.parallax-container -->
 
-<!-- --------------------------- Student Activity Center ------------------------- -->
+<!-- ---------------------------------------------------- -->
+<!-- STUDENT ACTIVITY CENTER-->
+<!-- ---------------------------------------------------- -->
  
 <div id="sac-parallax" class="parallax-container col-xs-12">
 
@@ -213,7 +198,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 
 </div><!-- /.parallax-container -->
 
-<!-- --------------------------- Building Student Success ------------------------ -->
+<!-- ---------------------------------------------------- -->
+<!-- BUILDING STUDENT SUCCESS -->
+<!-- ---------------------------------------------------- -->
  
 <div id="bac-parallax" class="parallax-container col-xs-12">
 
@@ -230,7 +217,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
  
 </div><!-- /.parallax-container -->
 
-<!-- ------------------------------ Pediatrics ----------------------------------- -->
+<!-- ---------------------------------------------------- -->
+<!-- PEDIATRICS -->
+<!-- ---------------------------------------------------- -->
 
 <div id="ped-parallax" class="parallax-container col-xs-12">
 
@@ -247,7 +236,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 
 </div><!-- /.parallax-container -->
 
-<!-- ----------------------------- Cardinal Stadium ------------------------------ -->
+<!-- ---------------------------------------------------- -->
+<!-- CARDINAL STADIUM -->
+<!-- ---------------------------------------------------- -->
 
 <div id="stad-parallax" class="parallax-container col-xs-12">
 
@@ -268,7 +259,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 
 </div><!-- /wrap -->
 
-<!-- ------------------------------ Progress -------------------------------------- -->
+<!-- ---------------------------------------------------- -->
+<!-- PROGRESS -->
+<!-- ---------------------------------------------------- -->
 
 <div class="progress-section container">
 
@@ -302,8 +295,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 
 </div>
 
-
-<!-- --------------------------------- Media  ---------------------------------------- -->
+<!-- ---------------------------------------------------- -->
+<!-- MEDIA-->
+<!-- ---------------------------------------------------- -->
 
 <div class="media-section col-xs-12">
 
@@ -342,91 +336,7 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 				<img id="sacImage" src="https://louisville.edu/resources/constructioncamera/mjpeg3?quality=12&doublescan=0" alt="Online streaming video of the construction activities at the Students Activities Center" />
 				
 				<img id="sacImage-Edge" src="https://louisville.edu/resources/constructioncamera/image3" alt="Online streaming video of the construction activities at the Students Activities Center" />
-				
-				
-<!-- 	Backup BAC camera 			
-
-				<form action="https://louisville.edu/financeandadministration/construction-camera-1" target="_blank" method="post">
-					<input data-val="true" id="Username" name="Username" value="*******" type="text">
-					<input data-val="true" id="Password" name="Password" value="*****" type="password">
-					<input type="submit" class="button" value="submit" />
-				</form>
-
-				<script>
-
-				var BaseURL = "http://136.165.54.10/";
-
-				var Camera = ""; // If you use an AXIS 240Q/241S(A)/241Q(A)/243SA, comment away this line by inserting "//"
-				//var Camera = "n"; // Change n to the Video source used in the AXIS 240Q/ 241S(A)/241Q(A)/243SA and remove "//"
-
-				// Go to the camera used and remove the "//" in front of the ImageResolution to be used.
-				// Note that only one can be enabled at a time.
-
-				// List of additional available resolutions is shown in the product's configuration.
-
-				// AXIS 207/210/210A/211/211A/212 PTZ/216FD/221/225FD
-				// var ImageResolution = "320x240";var DisplayWidth = "320";var DisplayHeight = "240";
-				// var ImageResolution = "640x480";var DisplayWidth = "640";var DisplayHeight = "480";
-
-				// AXIS 213 PTZ/214 PTZ/231D(+)/232D(+)/240Q/241S(A)/241Q(A)/243SA PAL
-				// var ImageResolution = "352x288";var DisplayWidth = "352";var DisplayHeight = "288";
-				// var ImageResolution = "704x576";var DisplayWidth = "704";var DisplayHeight = "576";
-
-				// AXIS 213 PTZ/214 PTZ/231D(+)/232D(+)/240Q/241S(A)/241Q(A)/243SA NTSC
-				// var ImageResolution = "352x240";var DisplayWidth = "352";var DisplayHeight = "240";
-				var ImageResolution = "704x480";var DisplayWidth = "704";var DisplayHeight = "480";
-
-				// This is the path to the image generating file inside the camera itself
-				var File = "axis-cgi/mjpg/video.cgi?resolution="+ImageResolution;
-				// No changes required below this point
-				if (Camera != "") {File += "&camera=" + Camera;}
-				var output = "";
-				if ((navigator.appName == "Microsoft Internet Explorer") &&
-				(navigator.platform != "MacPPC") && (navigator.platform != "Mac68k"))
-				{
-				// If Internet Explorer under Windows then use ActiveX
-				output = '<OBJECT ID="Player" width='
-				output += DisplayWidth;
-				output += ' height=';
-				output += DisplayHeight;
-				output += ' CLASSID="CLSID:DE625294-70E6-45ED-B895-CFFA13AEB044" ';
-				output += 'CODEBASE="';
-				output += BaseURL;
-				output += 'activex/AMC.cab">';
-				output += '<PARAM NAME="MediaURL" VALUE="';
-				output += BaseURL;
-				output += File + '">';
-				output += '<param name="MediaType" value="mjpeg-unicast">';
-				output += '<param name="ShowStatusBar" value="0">';
-				output += '<param name="ShowToolbar" value="0">';
-				output += '<param name="AutoStart" value="1">';
-				output += '<param name="StretchToFit" value="1">';
-				output += '<BR><B>Axis Media Control</B><BR>';
-				output += 'The AXIS Media Control, which enables you ';
-				output += 'to view live image streams in Microsoft Internet';
-				output += ' Explorer, could not be registered on your computer.';
-				output += '<BR></OBJECT>';
-				} else {
-				// If not IE for Windows use the browser itself to display
-				theDate = new Date();
-				output = '<IMG SRC="';
-				output += BaseURL;
-				output += File;
-				output += '&dummy=' + theDate.getTime().toString(10);
-				output += '" HEIGHT="';
-				output += DisplayHeight;
-				output += '" WIDTH="';
-				output += DisplayWidth;
-				output += '" ALT="Camera Image">';
-				}
-				document.write(output);
-				document.Player.ToolbarConfiguration = "play,+snapshot,+fullscreen";
-				
-				</script>
-
-				<img src="http://136.165.54.10/axis-cgi/mjpg/video.cgi" alt="Online streaming video of the construction activities at the new Belknap Academic Classroom / Student Success building"/></div> -->
-
-			
+							
 			</div>
 		</div>
 		<div style="clear: both"></div>
@@ -439,7 +349,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 
 </div>
 
-<!-- -------------------------------------- Bottom Section ------------------------------------------ -->
+<!-- ---------------------------------------------------- -->
+<!-- BOTTOM SECTION -->
+<!-- ---------------------------------------------------- -->
 
 <div class="bottom-section-wrap col-xs-12">
 
@@ -505,8 +417,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 
 </div><!-- /bottom-section-wrap -->
 
-
-<!-- ------------------------------ Footer ----------------------------------- -->
+<!-- ---------------------------------------------------- -->
+<!-- FOOTER -->
+<!-- ---------------------------------------------------- -->
 
 <div id="prefooter_wrapper" class="col-xs-12">
 
@@ -553,9 +466,9 @@ if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); 
 </div>
 
 
-
-<!-- ---------------------------------------------- Scripts -------------------------------------------- -->
-
+<!-- ---------------------------------------------------- -->
+<!-- SCRIPTS -->
+<!-- ---------------------------------------------------- -->
 
 <!-- --------------------------- Show / Hide Parallax Containers --------------------------------------- -->
 
@@ -876,14 +789,6 @@ $(document).ready(function() {
 	}
 });
 </script>
-
-
-<!-- ------------------------------------ Google Analytics ----------------------------------- -->
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-101446807-1', 'auto');ga('send', 'pageview');
-</script>
-
 
 </body>
 </html>
