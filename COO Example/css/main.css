@@ -1,0 +1,716 @@
+@CHARSET "ISO-8859-1";
+
+html,
+body { height: auto; }
+
+/*
+********************************* Primary Navigation
+*/
+
+.site-title {
+	color: #FFFFFF;
+	margin-top: 16px;
+	font-size: 20px;
+}
+
+#navigation {
+	height: 70px;
+	padding-left: 10%;
+	padding-right: 10%;
+	border-top: 8px solid #AD0000;
+	background-color: rgba(0,0,0,.9);
+	display: block;
+}
+
+.navbar { margin-bottom: 0; }
+
+.nav.navbar-nav.col-xs-6 { padding-left: 15px; }
+
+.navbar-nav { margin: 0; }
+
+.navbar-collapse { border: 0; }
+
+#navigation > .navbar-collapse.col-xs-2.pull-right {
+	padding-right: 15px;
+	width: 16.667% !important;
+}
+
+.site-title,
+ul.dropdown-menu { cursor: pointer; }
+
+.dropdown-menu { font-size: 16px; }
+
+#navigation > div,
+#navigation > div > a,
+.social-icon > img,
+.navbar-brand,
+.navbar-brand > img { height: 100%; }
+
+ul.dropdown-menu { margin-right: 10%; }
+
+ul.top-nav > li { height: 35px; }
+
+ul.top-nav > li > a { line-height: 35px; }
+
+.social-icon { margin: 0 20px; }
+
+#dropdown { margin-left: 30px; }
+
+#dropdown > img {
+	height: 80%;
+	margin-top: 10%;
+	cursor: pointer;
+}
+
+
+/*
+************************************* Secondary Navigation
+*/
+
+#mobile-nav {
+	top: 70px;
+	z-index: 1020;
+	padding: 0;
+}
+
+#mobile-nav .btn {
+	font-size: 16px;
+	width: 100%;
+	background: #AD0000;
+	color: #FFFFFF;
+}
+
+#secondary-navigation {
+	top: 70px;
+	z-index: 1000;
+}
+
+#secondary-navigation li {
+	width: 19.75%;
+	height: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#secondary-navigation > .nav-pills > li.active > a,
+#secondary-navigation > .nav-pills > li.active > a:hover,
+#secondary-navigation > .nav-pills > li.active > a:focus,
+#secondary-navigation > .nav-pills > li > a:hover,
+#secondary-navigation > .nav-pills > li > a:focus {
+	background-color: #AD0000;
+	color: #FFFFFF;
+}
+
+a.sec-nav {
+	height: 100%;
+	text-decoration: none;
+	color: #AD0000;
+}
+
+a.sec-nav > span {
+	font-size: 16px;
+	margin-top: 25px;
+	position: relative;
+	display: inherit;
+}
+
+
+/*
+*************************************** Parallax
+*/
+
+.parallax-wrap.col-xs-12 {
+	top: -30px;
+	height: 100%;
+	padding: 0 0 30px 0;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+
+.parallax-container {
+	display: inherit;
+	height: 100%; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+
+#bac-parallax { background-image: url('../img/slider/BACrooftop.jpg'); }
+
+#sac-parallax { background-image: url('../img/slider/SACsouth.jpg'); }
+
+#busops-parallax { background-image: url('../img/slider/gameday.jpg'); }
+
+#ped-parallax {	background-image: url('../img/slider/PedsRoofBeam1.jpg'); }
+
+#stad-parallax { background-image: url('../img/slider/pjcardstad1test.jpg'); }
+
+.pc {
+	position: relative;
+	margin-top: 10%;
+}
+
+.pc > .container-title { font-size: 24px; }
+
+.mac {
+	position: relative;
+	margin-top: 15%;
+}
+
+.mac > .container-title { font-size: 36px; }
+
+.container-wrap {
+	display: block;
+	width: 400px;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.8);
+	cursor: pointer;
+}
+
+.pc > .container-wrap { height: 650px; }
+
+.mac > .container-wrap { height: 800px; }
+
+.mac p { font-size: 18px; }
+
+.has-svg { padding-top: 5%; }
+
+.container-title {
+	color: #AD0000;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	padding-bottom: 60px;
+}
+
+.container-img { width: 100%; }
+
+.container-img > img {
+	width: 100%;
+	height: auto;
+}
+
+.container-text {
+	color: #AD0000;
+	text-align: center;
+	padding: 15px;
+}
+
+.container-text > p { margin-top: 10%; }
+
+.bottom-img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+/* 
+*********************************** Animated Circles - Progress
+*/
+
+.progresscircle-section {
+	background-color: #FFFFFF;
+	height: auto;
+}
+
+.progress-section { margin-top: 0; }
+
+.progress-section-content {
+	color: #AD0000;
+	text-align: center;
+	padding: 25px 0;
+	z-index: 1000;
+	display: block;
+}
+
+.progress-container { position: relative; }
+
+
+/*
+***************************************************** Media 
+*/
+
+#webcam > form { display: none; }
+
+#webcam > img {
+	height: auto;
+	width: 100%;
+}
+
+#sacImage-Edge { display: none; }
+
+.media-section.col-xs-12 { padding: 0; }
+
+.media-section-content.col-xs-12.fix-height { cursor: pointer; }
+
+.media-section > div,
+.bottom-section-wrap > div {
+	padding: 1% 5%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #F7F7F9;
+}
+
+.media-section > div {
+	height: 100%;
+	width: auto;
+}
+
+.media-section-title h4 {
+	font-weight: bold;
+	text-align: center;
+}
+
+.media-section-content {
+	height: 100%;
+	padding: 5%;
+	background: #FFFFFF;
+}
+
+
+/*
+******************************* Bottom Section
+*/
+
+.bottom-section-wrap.col-xs-12 { padding: 0; }
+
+.bottom-section-wrap > div:nth-of-type(3) { padding-bottom: 3%; }
+
+.bottom-section-content {
+	height: 100%;
+	background-color: #FFFFFF;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.bottom-section-content > div {
+	margin: 5% 0;
+	text-align: center;
+}
+
+.bottom-item-wrap {
+	display: block;
+	overflow: auto;
+}
+
+.bottom-item-wrap:before,
+.bottom-item-wrap:after {
+	content: "";
+	display: table;
+}
+
+.bottom-item-wrap:after { clear: both; }
+
+.bottom-section-title,
+.bottom-section-text { padding: 0 7%; }
+
+.bottom-section-title h3 { text-transform: uppercase; }
+
+.uofl-red { color: #AD0000; }
+
+
+/*
+******************************** Footer 
+*/
+
+#prefooter { width: 100%; }
+
+#prefooter_wrapper {
+	color: #FFFFFF;
+	font-size: 12px;
+	bottom: 0px;
+	background-color: #000;
+}
+
+#prefooter-rows { padding-bottom: 3%; }
+
+#footer-info {
+	width: 100%;
+	background-color: #000000;
+	padding-bottom: 25px;
+}
+
+#footer-info p { color:#FFFFFF; }
+
+.prefooter-well-wrapper {     
+	padding-top: 40px;
+	padding-bottom: 0px; 
+}
+
+.footer-content {
+	width: 390px;
+	margin: 0 auto;
+}
+
+.footer-logo { margin: 0px 0px 60px 0px; }
+
+.footer-content > div { margin-bottom: 40px; }
+
+.footer-content > div > p:first-child {
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.footer-content .footer-social { margin: 40px 0 35px; }
+
+.footer-content > p {
+	color: #ABABAB;
+	font-size: 12px;
+}
+
+.footer-position > p {
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.footer-bottomlinks {
+	position: relative;
+	color: white;
+	font-size: 12px;
+	letter-spacing: 3px;
+}
+
+.footer-bottomlinks a {
+	color: white;
+	font-size: 12px;
+	font-family: helvetica;
+	text-decoration: none;
+}
+
+.links-wrap { text-align: center; }
+
+.links-wrap a:hover,
+.links-wrap a:focus,
+.links-wrap a:active { color: #FFFFFF; }
+
+::-webkit-scrollbar { display: none; }
+
+.brk { height: 40px; }
+
+/*
+************************************ Arrow To Top
+*/
+
+#back-to-top {
+	position: fixed;
+	left: auto;
+	right: 20px;
+	top: auto;
+	bottom: 20px;
+	outline: none;
+	overflow: hidden;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #5B6F7B;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	z-index: 999999;
+	opacity: 0;
+}
+
+#back-to-top.show { opacity: 1; }
+
+#back-to-top:hover { background-color: #AD0000; }
+
+/*
+************************************ Vector Graphics
+*/
+
+.st0,
+.cls-1,
+.cls-2 {
+	fill: none;
+	stroke: #B20411; 
+	stroke-width: 2px;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 984;
+	stroke-dashoffset: 984;
+	animation: offset 6s linear forwards;
+}
+
+.st2 {
+	fill: none;
+	stroke: #B20411; 
+	stroke-width: 2px;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 5984;
+	stroke-dashoffset: 984;
+	animation: offset 5s linear forwards;
+}
+
+.svgelement {
+	margin: auto; 
+	display: block;
+	width: 50%;
+}
+  
+@keyframes offset { 100% { stroke-dashoffset: 0; } }
+
+
+/*
+******************************** IE Vector Graphics
+*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.st0, .cls-1,.cls-2, .st2 {
+		fill: none;
+		stroke: #B20411;
+		stroke-width: 2px;
+		stroke-miterlimit: 10;
+		stroke-dasharray: 5984;
+		stroke-dashoffset: 984;
+		animation: offset 5s linear forwards;
+	}
+}
+
+@supports (-ms-ime-align:auto) {
+	.st0, .cls-1, .cls-2, .st2 {
+		fill: none;
+		stroke: #B20411; 
+		stroke-width: 2px;
+		stroke-miterlimit: 10;
+		stroke-dasharray: 5984;
+		stroke-dashoffset: 984;
+		animation: offset 5s linear forwards;
+	}
+   .container { padding-right: 0 !important; }
+}
+
+@supports (-ms-ime-align:auto) {
+	#dropdown {
+		margin-left: 0;
+		text-align: right;
+	}
+	#dropdown > img { margin-top: 3%; }
+}
+
+/*
+******************************** Edge Hacks
+*/
+
+@supports (-ms-ime-align:auto) {
+	#sacImage-Edge { display: block; }
+	#sacImage { display: none; }
+}
+
+/*
+******************************** Safari Hacks
+*/
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { @media { .parallax-container { background-attachment: scroll; } } }
+
+/*
+********************************* Media Queries Navigation Buttons Label Margin
+*/
+
+@media all and (max-width: 1445px) { .sec-nav.first-two-lines > span { margin-top: 15px; } }
+
+@media all and (max-width: 1412px) { .sec-nav.second-two-lines > span { margin-top: 15px; } }
+
+@media all and (max-width: 1320px) { .sec-nav.third-two-lines > span { margin-top: 15px; } }
+
+@media all and (max-width: 1289px) { .sec-nav.fourth-two-lines > span { margin-top: 15px; } }
+
+@media all and (max-width: 1255px) { .sec-nav.fifth-two-lines > span { margin-top: 15px; } }
+
+/* @media all and (max-width: 995px) { .sec-nav.second-two-lines > span { margin-top: 5px; } } */
+
+/*
+********************************* Media Queries 1199
+*/
+
+@media all and (max-width: 1199px) {
+	#navigation {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.social-icon { margin: 0 10px; }
+	.pc { margin-top: 15%; }
+}
+
+/*
+********************************* Media Queries 991
+*/
+
+@media all and (max-width: 991px) {
+	#dropdown {
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	#navigation { padding: 0; }
+	.sec-nav.second-two-lines > span { margin-top: 15px; }
+	.pc,
+	.mac { margin-top: 20%; }
+	.links-wrap { text-align: left; }
+	.media-section > div { display: block; }
+	.media-section > div > div { display: inline-block; }
+	.media-section.col-xs-12 > .col-xs-12 > .col-sm-12.col-md-6:nth-of-type(1) { margin-top: 20px; }
+	.media-section.col-xs-12 > .col-xs-12 > .col-sm-12 { margin-bottom: 20px; }
+	.media-section-text { padding-bottom: 30px; }
+	.media-section-content.col-xs-12 > div,
+	#webcam {
+		width: 100%;
+		margin-top: 0 !important;		
+	}
+	.media-section-media > iframe {
+		width: 100% !important;
+		height: 450px !important;
+	}
+	.media-section-media { margin-top: 20px !important; }
+	#webcam > img {
+		height: auto;
+		width: 100%;
+	}
+}
+
+/*
+********************************* Media Queries Navigation Buttons Label Margin
+*/
+
+@media all and (max-width: 821px) { .sec-nav.second-two-lines > span { margin-top: 5px; } }
+
+@media all and (max-width: 810px) { .social-icon { margin: 0 5px; } }
+
+@media all and (max-width: 772px) { .social-icon { margin: 0; } }
+
+@media all and (max-width: 771px) { .sec-nav.third-two-lines > span { margin-top: 5px; } }
+
+
+
+/*
+********************************* Media Queries 767
+*/
+
+@media all and (max-width: 767px) {
+	#mobile-nav > ul.dropdown-menu {
+		margin-right: 0;
+		width: 100%;
+		background-color: #AD0000;
+	}
+	#mobile-nav > ul.dropdown-menu li a {
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.navbar-header.col-xs-3,
+	.navbar-nav.col-xs-6 { padding: 0; }
+	#mobile-nav > ul.dropdown-menu li a:hover,
+	#mobile-nav > ul.dropdown-menu li a:focus { color: #000000; }	
+	#bac-parallax { background-image: url('../img/slider/BACrooftop-m.jpg'); }
+	#sac-parallax { background-image: url('../img/slider/SACsouth-m.jpg'); }
+	#busops-parallax { background-image: url('../img/slider/gameday-m.jpg'); }
+	#ped-parallax {	background-image: url('../img/slider/PedsRoofBeam1-m.jpg'); }
+	#stad-parallax { background-image: url('../img/slider/pjcardstad1test-m.jpg'); }
+	.bottom-img { bottom: 10px; }
+	.media-section.col-xs-12 { height: auto; }
+	.media-section > div {
+		width: 100%;
+		height: auto;
+	}
+	.bottom-section-wrap > div { padding: 0; }
+	.media-section > div,
+	.bottom-section-wrap > div,
+	.col-xs-12 { display: block; }
+	.bottom-section-content {
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.progress-container {
+		width: 40%;
+		margin-left: 30%;
+	}
+	.progress-section-text { margin-top: 30px; }
+	#footer-info div { padding-left: 0; }
+}
+
+/*
+********************************* Media Queries 600
+*/
+
+@media all and (max-width: 600px) { .pc, .mac { top: 30px; } }
+
+/*
+********************************* Media Queries 500
+*/
+
+@media all and (max-width: 500px) {
+	.site-title {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	#dropdown { margin-right: 10px; }
+}
+
+/*
+********************************* Media Queries 460
+*/
+
+@media all and (max-width: 460px) {
+	.parallax-container { background-attachment: scroll; }
+	.bottom-img { bottom: 15px; }
+	.nav.navbar-nav.col-xs-6 { padding: 0; }
+	.navbar-collapse.col-xs-3 { padding-right: 0; }
+	.pc, .mac { top: 75px; }
+	.mac p { font-size: 16px; }
+	.mac > .container-title { font-size: 28px; }
+	.container-wrap { width: 200px; }
+	.pc > .container-wrap { height: 700px; }
+	.progress-container {
+		width: 60%;
+		margin-left: 20%;
+	}
+}
+
+/*
+********************************* Media Queries 400
+*/
+
+@media all and (max-width: 400px) {
+	#bac-parallax { background-image: url('../img/slider/BACrooftop-xxs.jpg'); }
+	#sac-parallax { background-image: url('../img/slider/SACsouth-xxs.jpg'); }
+	#busops-parallax { background-image: url('../img/slider/gameday-xxs.jpg'); }
+	#ped-parallax {	background-image: url('../img/slider/PedsRoofBeam1-xxs.jpg'); }
+	#stad-parallax { background-image: url('../img/slider/pjcardstad1test-xxs.jpg'); }
+}
+
+/*
+********************************* Media Queries 343
+*/
+
+@media all and (max-width: 343px) {
+	.site-title {
+		margin-top: 8px;
+		text-align: center;
+	}
+}
+
+/*
+********************************* Media Queries 320
+*/
+
+@media all and (max-width: 320px) {
+	.nav.navbar-nav.col-xs-6 { padding: 0 10px; }
+}
+
+
+
+
+
+
+

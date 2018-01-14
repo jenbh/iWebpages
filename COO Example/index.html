@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="description" content="Office of the Chief Operating Officer">
+<meta name="keywords" content="Office of the Chief Operating Officer">
+<meta name="author" content="University of Louisville">
+<meta property="og:title" content="Office of the Chief Operating Officer" />
+<meta property="og:description" content="Office of the Chief Operating Officer" />
+<meta property="og:image" content="https://richpreview.com/richpreview.png" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Office of the Chief Operating Officer</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/progressbar.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
+
+<script type="text/javascript">
+$(function() {
+	$("#secondary-navigation li").click(function (e) {
+		e.preventDefault();
+		$("#secondary-navigation li").addClass("active").not(this).removeClass("active");
+	});
+});
+</script>
+
+<script>
+$(document).ready(function() {
+	if ((navigator.userAgent.indexOf('Mac OS X') != -1)||
+	(navigator.userAgent.toLowerCase().indexOf('iphone') != -1)||
+	(navigator.userAgent.toLowerCase().indexOf('ipad') != -1)||
+	(navigator.userAgent.toLowerCase().indexOf('ipod') != -1)) {
+		$(".check-os").addClass("mac");
+		$('.check-media-os').addClass("media-mac");
+	} else {
+		$(".check-os").addClass("pc");
+		$('.check-media-os').addClass("media-pc");
+	}
+});
+</script>
+
+<script>
+var cameraImage = 'https://louisville.edu/resources/constructioncamera/image3';
+var buffer = {};
+
+function preload(){
+	buffer = new Image();
+	buffer.src = cameraImage + '?' + (new Date()).getTime();
+	buffer.onload = function() {
+		setTimeout(preload, 1000); // 1 second refresh
+		document.getElementById('sacImage').src = buffer.src;
+	}
+}
+
+function replaceCamera(){
+	$('#sacImage').attr("src", cameraImage);
+	preload();
+}
+
+$(window).on("load",function(){
+	var ie9Patt = new RegExp("MSIE 9");
+	var ie9 = ie9Patt.test(navigator.userAgent);	
+	var ie10Patt = new RegExp("MSIE 10");
+	var ie10 = ie10Patt.test(navigator.userAgent);
+	var ie11Patt = new RegExp("rv:11.0");
+	var ie11 = ie11Patt.test(navigator.userAgent);
+	
+	if ( ie9 || ie10 || ie11 ) { replaceCamera(); }
+});
+</script>
+
+
+<!-- Dev -->
+<!-- 
+<script>
+var cameraImageEdge = 'https://louisville.edu/resources/constructioncamera/image3';
+var buffer = {};
+
+function preloadEdge(){
+	buffer = new Image();
+	buffer.src = cameraImageEdge + '?' + (new Date()).getTime();
+	buffer.onload = function() {
+		setTimeout(preloadEdge, 1000); // 1 second refresh
+		document.getElementById('sacImage-Edge').src = buffer.src;
+	}
+}
+
+if ( document.getElementById('sacImage-Edge').is(":visible") ) { preloadEdge(); }
+});
+</script>
+ -->
+<!-- --- -->
+
+
+</head>
+<body>
+
+
+<div id="page">
+
+<!-- ------ Primary Navigation ------ -->
+
+<nav id="navigation" class="navbar navbar-default navbar-fixed-top col-xs-12">
+	
+<div class="navbar-header col-xs-3 col-sm-1">
+	<a class="navbar-brand" href="http://louisville.edu"><img src="img/ULlogo.png" alt="Brand"></a>
+</div>
+    
+<div class="nav navbar-nav col-xs-6">
+	<div class="visible-xs site-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer';">Chief Operating Officer</div>
+	<div class="hidden-xs site-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer';">Office of the Chief Operating Officer</div>
+	<div class="arrow-down"></div>
+</div>
+
+<div class="nav hidden-xs col-sm-3">
+	<a class="social-icon" href="http://youtube.com/user/univoflouisville"><img src="img/icons/youtubebutton.png" alt="Link to the University of Louisville YouTube page"></a>
+	<a class="social-icon" href="http://twitter.com/UofLCOO"><img src="img/icons/twitterbutton.png" alt="Link to the University of Louisville Twitter page"></a>
+</div>
+ 
+<div class="navbar-collapse col-xs-3">
+	<a id="dropdown" class="dropdown-toggle pull-right" data-toggle="dropdown"><img src="img/icons/menubutton.png" alt="Opens a dropdown menu"></a>
+	<ul class="dropdown-menu top-nav pull-right" aria-labelledby="dropdown">
+		<li><a role="menuitem" href="/chiefoperatingofficer/about-us">About Us</a></li>
+		<li><a role="menuitem" href="/chiefoperatingofficer/projects/projects-1">Projects</a></li>
+		<li><a role="menuitem" href="/chiefoperatingofficer/people">People</a></li>
+		<li><a role="menuitem" href="/chiefoperatingofficer/media-archives">Media Archives</a></li>
+		<li><a role="menuitem" href="/chiefoperatingofficer/links">Links</a></li>
+		<li><a role="menuitem" href="http://www.louisville.edu/cgi-bin/uofl.mail?cooadmin@louisville.edu">Contact Us</a></li>
+		<li class="divider visible-xs"></li>
+		<li class="visible-xs"><a role="menuitem" href="http://youtube.com/user/univoflouisville">Youtube</a></li>
+		<li class="visible-xs"><a role="menuitem" href="http://twitter.com/UofLCOO">Twitter</a></li>
+	</ul>
+</div>
+  
+
+
+</nav>
+
+<!-- ------ Secondary Navigation ------ -->
+
+<div id="secondary-navigation" class="hidden-xs col-md-10">
+
+<ul class="nav nav-pills hidden-xs">
+	<li class="active"><a id="bac-bg" class="sec-nav third-two-lines" href="javascript:void(0)" onclick="showBacDiv()"><span>Welcoming ESPN to Campus</span></a></li>
+	<li><a id="sac-bg" class="sec-nav fourth-two-lines" href="javascript:void(0)" onclick="showSacDiv()"><span>The SAC Transformation</span></a></li>
+	<li><a id="busops-bg" class="sec-nav second-two-lines" href="javascript:void(0)" onclick="showBusDiv()"><span>Building Student Success</span></a></li>
+	<li><a id="ped-bg" class="sec-nav first-two-lines" href="javascript:void(0)" onclick="showPedDiv()"><span>The Future of Pediatric Care</span></a></li>
+	<li><a id="stad-bg" class="sec-nav fifth-two-lines" href="javascript:void(0)" onclick="showStadDiv()"><span>360 Degrees of Football</span></a></li>
+</ul>
+
+</div><!-- /secondary-navigation -->
+
+<div id="mobile-nav" class="dropdown visible-xs col-xs-12">
+
+<button id="mobile-dropdown" class="btn btn-default-mobile dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	Building Student Success
+	<span class="caret"></span>
+</button>
+
+<ul class="dropdown-menu dropdown-menu-mobile" aria-labelledby="mobile-dropdown">
+	<li><a href="javascript:void(0)" onclick="showBacDiv()" onclick="changeLabel()">Welcoming ESPN to Campus</a></li>
+	<li><a href="javascript:void(0)" onclick="showSacDiv()" onclick="changeLabel()">The SAC Transformation</a></li>
+	<li><a href="javascript:void(0)" onclick="showBusDiv()" onclick="changeLabel()">Building Student Success</a></li>
+	<li><a href="javascript:void(0)" onclick="showPedDiv()" onclick="changeLabel()">The Future of Pediatric Care</a></li>
+	<li><a href="javascript:void(0)" onclick="showStadDiv()" onclick="changeLabel()">360 Degrees of Football</a></li>
+</ul>
+
+</div><!-- /mobile-nav -->
+
+<!-- --------------------------------- Parallax ---------------------------------- -->
+
+<div class="parallax-wrap col-xs-12">
+
+<!-- ----------------------------- Business Operations --------------------------- -->
+
+<div id="busops-parallax" class="parallax-container col-xs-12">
+
+<div class="col-md-6 col-md-offset-3 check-os">
+<div class="container-title"><br></div>
+<div class="container-wrap" onclick="location.href='http://louisville.edu/chiefoperatingofficer/media-archives/college-gameday-on-friday';">
+	<div class="container-img"><img src="img/insertphotohomepage.jpg" alt="Insert photo for homepage" /></div>
+	<div class="container-text"><p>Thanks to our dedicated employees, ESPN’s College GameDay LIVE broadcast was a success! The ESPN Senior Producer said it best: “The Louisville Administration, Grounds/Facilities, and Athletic staff pulled out all the stops and accommodated all of the last minute planning and requests. Absolutely one of the best groups we have worked with during my tenure on College GameDay!” Take a look at our photos from Friday and Saturday.</p></div>
+	<div style="clear: both"></div>
+</div><!-- /.container-wrap -->
+<div style="clear: both"></div>
+</div><!-- /.check-os -->
+<div style="clear: both"></div>
+
+</div><!-- /.parallax-container -->
+
+<!-- --------------------------- Student Activity Center ------------------------- -->
+ 
+<div id="sac-parallax" class="parallax-container col-xs-12">
+
+<div class="col-md-6 col-md-offset-3 check-os">
+<div class="container-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer/projects/projects-1#sac';">Swain Student Activity Center Renovation and Expansion</div>
+<div class="container-wrap" onclick="location.href='http://louisville.edu/chiefoperatingofficer/projects/projects-1#sac';">
+	<div class="container-img"><img src="img/SACescalator.jpg" alt="Construction workers activities at Swain Student Activity Center Expansion" /></div>
+	<div class="container-text"><p>Our $40 million renovation project is a capital makeover to the current 365,000 sq. ft. of space, including a 32,775 sq. ft. expansion. The UofL community will see all three levels of the building transform. Exterior changes, increased dining options and a new campus store are simply the beginning. The new SAC will offer greater meeting places for the more than 400 recognized student organizations and unique common areas where students can socialize and study. Several new venues expected to open fall 2017.</p></div>
+	<div style="clear: both"></div>
+</div><!-- /.container-wrap -->
+<div style="clear: both"></div>
+</div><!-- /.check-os -->
+<div style="clear: both"></div>
+
+</div><!-- /.parallax-container -->
+
+<!-- --------------------------- Building Student Success ------------------------ -->
+ 
+<div id="bac-parallax" class="parallax-container col-xs-12">
+
+<div class="col-md-6 col-md-offset-3 check-os">
+<div class="container-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer/belknap-academic-classroom-building-webcam';">Belknap Academic Classroom Building</div>
+<div class="container-wrap has-svg" onclick="location.href='http://louisville.edu/chiefoperatingofficer/belknap-academic-classroom-building-webcam';">
+	<div class="container-img"><svg id="Layer_1" class="svgelement" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 144 144"><defs></defs><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" x="59.34" y="98.33" width="4.1" height="4.1"/><rect class="cls-1" x="59.34" y="107.16" width="4.1" height="4.1"/><rect class="cls-1" x="76.87" y="89.5" width="4.1" height="4.1"/><rect class="cls-1" x="76.87" y="98.33" width="4.1" height="4.1"/><rect class="cls-1" x="76.87" y="71.85" width="4.1" height="4.1"/><rect class="cls-1" x="76.87" y="80.67" width="4.1" height="4.1"/><rect class="cls-1" x="76.87" y="107.16" width="4.1" height="4.1"/><rect class="cls-1" x="103.97" y="89.5" width="4.1" height="4.1"/><rect class="cls-1" x="103.97" y="98.33" width="4.1" height="4.1"/><rect class="cls-1" x="103.97" y="107.16" width="4.1" height="4.1"/><rect class="cls-1" x="94.35" y="89.5" width="4.1" height="4.1"/><rect class="cls-1" x="94.35" y="98.33" width="4.1" height="4.1"/><rect class="cls-1" x="94.35" y="107.16" width="4.1" height="4.1"/></g><g id="Layer_2" data-name="Layer 2"><polyline class="cls-1" points="54.18 117.25 54.18 94.97 68.64 94.97 68.64 117.25"/><polyline class="cls-1" points="68.64 94.97 68.64 65.85 89.25 65.85 89.25 117.25"/><polyline class="cls-1" points="89.25 83.98 113.22 83.98 113.22 117.25"/><line class="cls-1" x1="50.37" y1="117.25" x2="116.77" y2="117.33"/></g><line class="cls-2" x1="26.46" y1="29.42" x2="64.4" y2="29.42"/><line class="cls-2" x1="26.46" y1="36.71" x2="64.4" y2="36.71"/><line class="cls-2" x1="26.46" y1="44.01" x2="64.4" y2="44.01"/><line class="cls-2" x1="26.46" y1="51.31" x2="64.4" y2="51.31"/><line class="cls-2" x1="26.46" y1="58.6" x2="64.4" y2="58.6"/><line class="cls-2" x1="26.46" y1="65.9" x2="64.4" y2="65.9"/><line class="cls-2" x1="26.46" y1="73.19" x2="64.4" y2="73.19"/><circle class="cls-2" cx="55.65" cy="11.18" r="2.19"/><polyline class="cls-2" points="95.04 83.98 95.04 15.56 74.11 15.56 71.95 20.08 55.99 20.08 55.65 20.08 55.21 20.08 54.96 20.08 38.91 20.08 36.75 15.56 16.25 15.56 16.25 111.86 53.46 111.86"/><path class="cls-2" d="M69.86,10.64l-.72-1h-7.9a5.82,5.82,0,0,0-5.59-4.26c-.15,0-.29,0-.44,0v0c-.14,0-.26.06-.4.08A5.81,5.81,0,0,0,50.05,9.6H41.71l-.72,1-4.32,4.77.07.15,2.16,4.52h33l2.16-4.52.07-.15Z"/></svg></div>
+	<div class="container-text"><p>Progress continues on UofL’s new, state-of-the-art, 161,000 sq. ft. classroom building that will enhance learning and provide a variety of services to faculty and students. Expected to open for the fall 2018 semester, the four-story, $80 million academic building will serve undergraduate students on the Belknap Campus by housing 17 technology-advanced classrooms and science labs as well as group study areas, gathering spaces and food service options.</p></div>
+	<div style="clear: both"></div> 
+</div><!-- /.container-wrap -->
+<div style="clear: both"></div> 
+</div><!-- /.check-os -->
+<div style="clear: both"></div>
+ 
+</div><!-- /.parallax-container -->
+
+<!-- ------------------------------ Pediatrics ----------------------------------- -->
+
+<div id="ped-parallax" class="parallax-container col-xs-12">
+
+<div class="col-md-6 col-md-offset-3 check-os">
+<div class="container-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer/projects/projects-1#pediatrics';">Pediatric Medical Office Building</div>
+<div class="container-wrap" onclick="location.href='http://louisville.edu/chiefoperatingofficer/projects/projects-1#pediatrics';">
+	<div class="container-img"><img src="img/PedsSkywalk.jpg" alt="Construction workers activities at the Pediatric Medical Office building"/></div>
+	<div class="container-text"><p>We’re building the future of pediatric care with a new 170,000 sq. ft. medical office building at the School of Medicine to house all of the UofL Physicians pediatric specialty clinical practices, with a large general pediatrics location on the ground floor. The eight-story building will have seven clinical floors plus a lab, pharmacy and radiology services. Impressive features include a walkable rooftop garden and state-of-the-art conference area.</p></div>
+	<div style="clear: both"></div>
+</div><!-- /.container-wrap -->
+<div style="clear: both"></div>
+</div><!-- /.check-os -->
+<div style="clear: both"></div>
+
+</div><!-- /.parallax-container -->
+
+<!-- ----------------------------- Cardinal Stadium ------------------------------ -->
+
+<div id="stad-parallax" class="parallax-container col-xs-12">
+
+<div class="col-md-6 col-md-offset-3 check-os">
+<div class="container-title" onclick="location.href='http://louisville.edu/chiefoperatingofficer/projects/projects-1';">Papa John’s Stadium Expansion</div>
+<div class="container-wrap" onclick="location.href='http://louisville.edu/chiefoperatingofficer/projects/projects-1';">
+	<div class="container-img"><img src="img/pjcardstadsmall.jpg" alt="Construction progress at Papa John’s Stadium Expansion" /></div>
+	<div class="container-text"><p>Proud to be <span class="italic">Coming Full Circle</span> with the expansion to create a 360-degree stadium. This $55 million project at UofL's Papa John's Stadium will add 10,000 new seats in the north end zone and enhance the student-athlete experience. Funded entirely by UofL Athletics, the project does not utilize any student fees, university, state or federal subsidies. The 70,000 sq. ft. expansion, including 10,000 sq. ft. for improvements to the team conditioning, training and therapeutic support, is expected to be ready for the 2018 football season.</p></div>
+	<div style="clear: both"></div>
+</div><!-- /.container-wrap -->
+<div style="clear: both"></div>
+</div><!-- /.check-os -->
+<div style="clear: both"></div>
+
+</div><!-- /.parallax-container -->
+
+<span class="arrow-wrap"><img class="bottom-img" src="img/vs.png" alt="" /></span>
+
+</div><!-- /wrap -->
+
+<!-- ------------------------------ Progress -------------------------------------- -->
+
+<div class="progress-section container">
+
+<div class="progresscircle-section col-xs-12 col-sm-3">	
+	<div class="progress-section-content">
+		<section id="pc"><div id="progressbarcontainer1" class="progress-container"></div></section>
+		<div class="progress-section-text"><h4><b>GO365 Completion Rate</b></h4>We’re working on the first phase of implementing Microsoft Office365 services and products for employees. UofL’s go365 begins with a migration of all Outlook email and calendaring. Starting early summer, we’ll have everyone at UofL literally @louisville by mid-fall.</div> 
+	</div>
+</div>
+
+<div class="progresscircle-section col-xs-12 col-sm-3">
+	<div class="progress-section-content">
+		<section id="pc"><div id="progressbarcontainer2" class="progress-container"></div></section>
+		<div class="progress-section-text"><h4><b>Hours Saved</b></h4>Our continuous quality improvements for administrative functions and operations have already shown to increase productivity and make our employee’s day-to-day business lives easier. By eliminating redundancies and taking a new approach to key systems, saving hours also means saving money.</div> 
+	</div>
+</div>
+
+<div class="progresscircle-section col-xs-12 col-sm-3">
+	<div class="progress-section-content">
+		<section id="pc"><div id="progressbarcontainer3" class="progress-container"></div></section>
+		<div class="progress-section-text"><h4><b>Customer Service Satisfaction</b></h4>Business Operations walk-in service center and online employee self-service portal are part of our increased effort to improve the way we do business. With their Miller IT Center lower level location, Bus Ops has achieved a 99% satisfaction rating from their walk-in customers.</div> 
+	</div>
+</div>
+
+<div class="progresscircle-section col-xs-12 col-sm-3">
+	<div class="progress-section-content">
+		<section id="pc"><div id="progressbarcontainer4" class="progress-container"></div></section>
+		<div class="progress-section-text"><h4><b>Police Review</b></h4>The Federal Bureau of Investigation (FBI) gave our University of Louisville Police Department (ULPD) Communication Center a perfect score, with zero errors, on their most recent bi-yearly audit. This number reflects how important we think public safety is in our UofL community.</div>
+	</div>
+</div>
+
+</div>
+
+
+<!-- --------------------------------- Media  ---------------------------------------- -->
+
+<div class="media-section col-xs-12">
+
+<div class="col-xs-12">
+
+<div class="col-sm-12 col-md-6">
+	<div class="media-section-content col-xs-12 check-media-os for-margin-calc">
+		<div class="col-sm-12 col-md-6 media-text">
+			<div class="media-section-title"><h4 class="uofl-red">Follow @UofLCOO on Twitter</h4></div>
+			<div class="media-section-text">Keep up to date all the latest news from the Chief Operating Officer via his official Twitter account. Follow us on Twitter to get important information direct to your feed! It’s a great way to stay up-to-date on everything happening in our units.</div>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<div class="media-section-media col-xs-12">
+				<meta name="twitter:widgets:theme" content="light">
+				<meta name="twitter:widgets:link-color" content="#55acee">
+				<meta name="twitter:widgets:border-color" content="#55acee"> 
+				<a class="twitter-timeline" data-width="363" data-height="360" title="UofLCOO Twitter" href="https://twitter.com/uoflcoo"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+	<div style="clear: both"></div>
+</div>
+<div style="clear: both"></div>
+
+<div class="col-sm-12 col-md-6">
+	<div class="media-section-content col-xs-12 fix-height" onclick="location.href='https://louisville.edu/chiefoperatingofficer/construction-webcam-sac';">
+		<div class="col-sm-12 col-md-6 media-text">
+			<div class="media-section-title"><h4 class="uofl-red">We Have Exciting Things Happening!</h4></div>
+			<div class="media-section-text">We’re transforming UofL by continuing to build and promote development for our students, faculty and staff. Look in on our work-in-progress via streaming webcam. With this construction camera, you can watch the progress of the south section of the Swain Student Activities Center.</div>
+		</div>
+			<div class="media-section-media col-sm-12 col-md-6">
+				<div id="webcam" class="col-xs-12">
+				
+				<img id="sacImage" src="https://louisville.edu/resources/constructioncamera/mjpeg3?quality=12&doublescan=0" alt="Online streaming video of the construction activities at the Students Activities Center" />
+				
+				<img id="sacImage-Edge" src="https://louisville.edu/resources/constructioncamera/image3" alt="Online streaming video of the construction activities at the Students Activities Center" />
+				
+				
+<!-- 	Backup BAC camera 			
+
+				<form action="https://louisville.edu/financeandadministration/construction-camera-1" target="_blank" method="post">
+					<input data-val="true" id="Username" name="Username" value="*******" type="text">
+					<input data-val="true" id="Password" name="Password" value="*****" type="password">
+					<input type="submit" class="button" value="submit" />
+				</form>
+
+				<script>
+
+				var BaseURL = "http://136.165.54.10/";
+
+				var Camera = ""; // If you use an AXIS 240Q/241S(A)/241Q(A)/243SA, comment away this line by inserting "//"
+				//var Camera = "n"; // Change n to the Video source used in the AXIS 240Q/ 241S(A)/241Q(A)/243SA and remove "//"
+
+				// Go to the camera used and remove the "//" in front of the ImageResolution to be used.
+				// Note that only one can be enabled at a time.
+
+				// List of additional available resolutions is shown in the product's configuration.
+
+				// AXIS 207/210/210A/211/211A/212 PTZ/216FD/221/225FD
+				// var ImageResolution = "320x240";var DisplayWidth = "320";var DisplayHeight = "240";
+				// var ImageResolution = "640x480";var DisplayWidth = "640";var DisplayHeight = "480";
+
+				// AXIS 213 PTZ/214 PTZ/231D(+)/232D(+)/240Q/241S(A)/241Q(A)/243SA PAL
+				// var ImageResolution = "352x288";var DisplayWidth = "352";var DisplayHeight = "288";
+				// var ImageResolution = "704x576";var DisplayWidth = "704";var DisplayHeight = "576";
+
+				// AXIS 213 PTZ/214 PTZ/231D(+)/232D(+)/240Q/241S(A)/241Q(A)/243SA NTSC
+				// var ImageResolution = "352x240";var DisplayWidth = "352";var DisplayHeight = "240";
+				var ImageResolution = "704x480";var DisplayWidth = "704";var DisplayHeight = "480";
+
+				// This is the path to the image generating file inside the camera itself
+				var File = "axis-cgi/mjpg/video.cgi?resolution="+ImageResolution;
+				// No changes required below this point
+				if (Camera != "") {File += "&camera=" + Camera;}
+				var output = "";
+				if ((navigator.appName == "Microsoft Internet Explorer") &&
+				(navigator.platform != "MacPPC") && (navigator.platform != "Mac68k"))
+				{
+				// If Internet Explorer under Windows then use ActiveX
+				output = '<OBJECT ID="Player" width='
+				output += DisplayWidth;
+				output += ' height=';
+				output += DisplayHeight;
+				output += ' CLASSID="CLSID:DE625294-70E6-45ED-B895-CFFA13AEB044" ';
+				output += 'CODEBASE="';
+				output += BaseURL;
+				output += 'activex/AMC.cab">';
+				output += '<PARAM NAME="MediaURL" VALUE="';
+				output += BaseURL;
+				output += File + '">';
+				output += '<param name="MediaType" value="mjpeg-unicast">';
+				output += '<param name="ShowStatusBar" value="0">';
+				output += '<param name="ShowToolbar" value="0">';
+				output += '<param name="AutoStart" value="1">';
+				output += '<param name="StretchToFit" value="1">';
+				output += '<BR><B>Axis Media Control</B><BR>';
+				output += 'The AXIS Media Control, which enables you ';
+				output += 'to view live image streams in Microsoft Internet';
+				output += ' Explorer, could not be registered on your computer.';
+				output += '<BR></OBJECT>';
+				} else {
+				// If not IE for Windows use the browser itself to display
+				theDate = new Date();
+				output = '<IMG SRC="';
+				output += BaseURL;
+				output += File;
+				output += '&dummy=' + theDate.getTime().toString(10);
+				output += '" HEIGHT="';
+				output += DisplayHeight;
+				output += '" WIDTH="';
+				output += DisplayWidth;
+				output += '" ALT="Camera Image">';
+				}
+				document.write(output);
+				document.Player.ToolbarConfiguration = "play,+snapshot,+fullscreen";
+				
+				</script>
+
+				<img src="http://136.165.54.10/axis-cgi/mjpg/video.cgi" alt="Online streaming video of the construction activities at the new Belknap Academic Classroom / Student Success building"/></div> -->
+
+			
+			</div>
+		</div>
+		<div style="clear: both"></div>
+</div>
+<div style="clear: both"></div>
+</div>
+<div style="clear: both"></div>
+</div>
+<div style="clear: both"></div>
+
+</div>
+
+<!-- -------------------------------------- Bottom Section ------------------------------------------ -->
+
+<div class="bottom-section-wrap col-xs-12">
+
+<div class="col-xs-12">
+
+<div class="col-xs-12 col-sm-6 bottom-item-wrap" onclick="location.href='http://louisville.edu/chiefoperatingofficer/about-us';">
+	<div class="bottom-section-content col-xs-12 col-sm-10 col-sm-offset-1">
+		<div class="bottom-section-img"><img src="img/icons/v3-18.png" alt="Link to About Us page" /></div>
+		<div class="bottom-section-title"><h3 class="uofl-red">our office</h3></div>
+		<div class="bottom-section-text"><p>We administer the University’s business, maintenance, safety and technical operations while increasing customer service and operational accountability. This office includes the Finance and Administrative Support Team (FAST) which supports the employment transactions, financial transactions and financial reporting for all of our units.</p></div>
+	</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 bottom-item-wrap" onclick="location.href='http://louisville.edu/it';">
+	<div class="bottom-section-content col-xs-12 col-sm-10 col-sm-offset-1">
+		<div class="bottom-section-img"><img src="img/icons/v3-16.png" alt="Link to UofL Information Technology web-site" /></div>
+		<div class="bottom-section-title"><h3 class="uofl-red">information technology</h3></div>
+		<div class="bottom-section-text"><p>Information Technology (IT) provides a wide scope of technology services and solutions. IT maintains the campus networks, campus-wide voice over IP telephone systems and a variety of enterprise business systems such as PeopleSoft Finance, Human Capital Management and Campus Solutions. IT provides an extensive array of advanced research computing and state-of-the-art support with their Help Desk and direct support services for students, faculty and staff.</p></div>
+	</div>
+</div>
+
+</div>
+
+<div class="col-xs-12">
+
+<div class="col-xs-12 col-sm-6 bottom-item-wrap" onclick="location.href='http://louisville.edu/businessservices';">
+	<div class="bottom-section-content col-xs-12 col-sm-10 col-sm-offset-1">
+		<div class="bottom-section-img"><img src="img/icons/v3-17.png" alt="Link to UofL Business Services web-site" /></div>
+		<div class="bottom-section-title"><h3 class="uofl-red">business services</h3></div>
+		<div class="bottom-section-text"><p>Business Services works to manage all of the operational units that deliver commercial and professional services to faculty, staff, students and visitors. Areas: Parking and Transportation, Risk Management, Purchasing & Procurement, Print and Copy Management, Card Services, Mail Services, Campus Leasing and Contract Services (which includes UofL's Campus Stores, Dining Services, vending and the Commonwealth Credit Union).</p></div>
+	</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 bottom-item-wrap" onclick="location.href='http://louisville.edu/police';">
+	<div class="bottom-section-content col-xs-12 col-sm-10 col-sm-offset-1">
+		<div class="bottom-section-img"><img src="img/icons/v3-21.png" alt="Link to UofL Public Safety web-site"></div>
+		<div class="bottom-section-title"><h3 class="uofl-red">public safety</h3></div>
+		<div class="bottom-section-text"><p>We maintain public peace and safety while safeguarding the assets of the institution and its faculty, staff, students and visitors. The department includes the University of Louisville Police Department (ULPD) as affiliated with Louisville Metro Police Department. It additionally handles medical and fire emergencies, event security, various safety programs, police escort services, facility access, emergency communications and security monitoring on all UofL campuses.</p></div>
+	</div>
+</div>
+
+</div>
+
+<div class="col-xs-12">
+
+<div class="col-xs-12 col-sm-6 bottom-item-wrap" onclick="location.href='http://louisville.edu/piba';">
+	<div class="bottom-section-content col-xs-12 col-sm-10 col-sm-offset-1">
+		<div class="bottom-section-img"><img src="img/icons/v3-20.png" alt="Link to UofL Performance Improvement & Business Analytics web-site"></div>
+		<div class="bottom-section-title"><h3 class="uofl-red">performance improvement & business analytics</h3></div>
+		<div class="bottom-section-text"><p>PIBA works to deliver streamlined business processes, transformative technology solutions, effective project management and responsive data analytics. The units under PIBA develop and implement continuous quality improvements for numerous administrative operations. These include the areas responsible for business operations, the finance and human resources ERP solutions, project management, business intelligence, digital communication and other quality improvement initiatives.</p></div>
+	</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 bottom-item-wrap" onclick="location.href='http://louisville.edu/facilities';">
+	<div class="bottom-section-content col-xs-12 col-sm-10 col-sm-offset-1">
+		<div class="bottom-section-img"><img src="img/icons/v3-19.png" alt="Link to UofL Facilities Management web-site"></div>
+		<div class="bottom-section-title"><h3 class="uofl-red">facilities management</h3></div>
+		<div class="bottom-section-text"><p>Our offices include the University Planning, Design, and Construction (UPDC), Environmental Health and Safety (DEHS), and Physical Plant departments. In addition to being responsible for the operation and maintenance of agency facilities, whether owned or leased, we manage all design and construction phase activities for new capital construction and major renovation projects. Additionally, our experts maintain all biological, radiation and workplace safety coordination, collection and disposition.</p></div>
+	</div>
+</div>
+
+</div>
+
+</div><!-- /bottom-section-wrap -->
+
+
+<!-- ------------------------------ Footer ----------------------------------- -->
+
+<div id="prefooter_wrapper" class="col-xs-12">
+
+<div id="prefooter-rows" class="container">
+
+<div id="prefooter" class="row grey">
+	<div class="col-sm-4">
+		<div class="prefooter-well-wrapper">
+			<div class="footer-position">
+				<p>Office of the Chief Operating Officer</p>
+				<p>109 Grawemeyer Hall</p>
+				<p>Louisville, KY 40292</p>
+				<p>Phone: 502-852-6127</p>
+				<br>
+				<a href="http://louisville.edu"><img src="img/logo-footer.png" alt="Brand logo"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div class="hidden-md hidden-lg brk"></div>
+    
+<div id="footer-info" class="col-xs-12">
+	<div class="footer-bottomlinks col-xs-12">
+		<div class="links-wrap col-sm-12 col-md-6 col-md-offset-2">                
+			<a href="http://louisville.edu/contact.html">CONTACT</a>/
+			<a href="http://louisville.edu/admissions/apply">APPLY</a>/
+			<a href="http://louisville.edu/jobs/">JOBS</a>/
+			<a href="http://louisville.edu/giving">DONATE</a>/
+			<a href="http://louisville.edu/emergency">EMERGENCY</a>/
+			<a href="https://ulink.louisville.edu/">ULINK</a>
+		</div>
+		<div class="hidden-md hidden-lg brk"></div>
+		<div class="col-sm-12 col-md-4">&#169; UNIVERSITY OF LOUISVILLE</div>
+	</div>
+</div>
+
+</div>
+
+<div id="back-to-top">&#9650;</div>
+
+</div>
+
+
+
+<!-- ---------------------------------------------- Scripts -------------------------------------------- -->
+
+
+<!-- --------------------------- Show / Hide Parallax Containers --------------------------------------- -->
+
+<script>
+$(document).ready(function() {
+	$('.parallax-container').hide();
+	$('#busops-parallax').show();
+	$('#busops-parallax div').show();
+});
+</script>
+
+<script>
+function showBacDiv() {
+	$('.parallax-container').hide();
+	$('#busops-parallax').show();
+	$('#busops-parallax div').show();
+}
+
+function showSacDiv() {
+	$('.parallax-container').hide();
+	$('#sac-parallax').show();
+	$('#sac-parallax div').show();
+}
+
+function showBusDiv() {
+	$('.parallax-container').hide();
+	$('#bac-parallax').show();
+	$('#bac-parallax div').show();
+}
+
+function showPedDiv() {
+	$('.parallax-container').hide();
+	$('#ped-parallax').show();
+	$('#ped-parallax div').show();
+}
+
+function showStadDiv() {
+	$('.parallax-container').hide();
+	$('#stad-parallax').show();
+	$('#stad-parallax div').show();
+}
+</script>
+
+
+<!-- ------------------------------------- Change Button Label ------------------------------------------>
+ 
+<script>
+$(function changeLabel(){
+	$(".dropdown-menu-mobile li a").click(function(){
+		var selectText = $(this).text();
+		$("#mobile-dropdown").html(selectText + ' <span class="caret"></span>');
+	});
+});
+</script>
+
+
+<!-- ------------------------------------ Progress Bar 01 ----------------------------------- -->
+
+<script type="text/javascript">
+$(function() {
+  var $section = $('#pc');
+  var $queue = $({});
+  var bar = new ProgressBar.Circle(progressbarcontainer1, {
+  color: '#000000',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 20,
+  trailWidth: 15,
+  easing: 'easeInOut',
+  duration: 3400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#00703C', width: 15 },
+  to: { color: '#00703C', width: 15 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    var value = Math.round(circle.value() * 100) + '%';
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '3rem';
+
+  $(document).bind('scroll', function(ev) {
+    var scrollOffset = $(document).scrollTop();
+    var containerOffset = $section.offset().top - window.innerHeight;
+    if (scrollOffset > containerOffset) {
+      bar.animate(0.85);  // Number from 0.0 to 1.0
+      // unbind event not to load scrolsl again
+      $(document).unbind('scroll');
+    }
+  });
+});
+</script>
+
+
+<!-- ------------------------------------ Progress Bar 02 ----------------------------------- -->
+
+<script type="text/javascript">
+$(function() {
+  var $section = $('#pc');
+  var $queue = $({});
+  var bar = new ProgressBar.Circle(progressbarcontainer2, {
+  color: '#000000',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 20,
+  trailWidth: 15,
+  easing: 'easeInOut',
+  duration: 3400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#00703C', width: 15 },
+  to: { color: '#00703C', width: 15 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    var value = Math.round(circle.value() * 100) + '00';
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '3rem';
+
+  $(document).bind('scroll', function(ev) {
+    var scrollOffset = $(document).scrollTop();
+    var containerOffset = $section.offset().top - window.innerHeight;
+    if (scrollOffset > containerOffset) {
+      bar.animate(.49);  // Number from 0.0 to 1.0
+      // unbind event not to load scrolsl again
+      $(document).unbind('scroll');
+    }
+  });
+});
+</script>
+
+
+<!-- ------------------------------------ Progress Bar 03 ----------------------------------- -->
+
+<script type="text/javascript">
+$(function() {
+  var $section = $('#pc');
+  var $queue = $({});
+var bar = new ProgressBar.Circle(progressbarcontainer3, {
+  color: '#000000',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 20,
+  trailWidth: 15,
+  easing: 'easeInOut',
+  duration: 3400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#00703C', width: 15 },
+  to: { color: '#00703C', width: 15 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    var value = Math.round(circle.value() * 100) + '%' ;
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '3rem';
+
+  $(document).bind('scroll', function(ev) {
+    var scrollOffset = $(document).scrollTop();
+    var containerOffset = $section.offset().top - window.innerHeight;
+    if (scrollOffset > containerOffset) {
+      bar.animate(0.99);  // Number from 0.0 to 1.0
+        // Number from 0.0 to 1.0
+      // unbind event not to load scrolsl again
+      $(document).unbind('scroll');
+    }
+  });
+});
+</script>
+
+
+<!-- ------------------------------------ Progress Bar 04 ----------------------------------- -->
+
+<script type="text/javascript">
+$(function() {
+  var $section = $('#pc');
+  var $queue = $({});
+var bar = new ProgressBar.Circle(progressbarcontainer4, {
+  color: '#000000',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 20,
+  trailWidth: 15,
+  easing: 'easeInOut',
+  duration: 3400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#00703C', width: 15 },
+  to: { color: '#00703C', width: 15 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+    var value = Math.round(circle.value() * 100) + '%';
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '3rem';
+
+  $(document).bind('scroll', function(ev) {
+    var scrollOffset = $(document).scrollTop();
+    var containerOffset = $section.offset().top - window.innerHeight;
+    if (scrollOffset > containerOffset) {
+      bar.animate(1.0);  // Number from 0.0 to 1.0
+      // unbind event not to load scrolsl again
+      $(document).unbind('scroll');
+    }
+  });
+});
+</script>
+
+
+<!-- ------------------------------------ Media Text Top Margin ----------------------------------- -->
+
+<script>
+function fixTopMargin() {
+	var tileHeight = $(".for-margin-calc").height();
+	var textHeight = $(".media-text").height();
+	var videoHeight = $("#webcam").height();
+	var totalTextWhiteSpace = tileHeight - textHeight;
+	var totalVideoWhiteSpace = tileHeight - videoHeight;
+	var topTextMargin = totalTextWhiteSpace / 2.5;
+	var topVideoMargin = totalVideoWhiteSpace / 2.5;
+	
+	$('.media-text').css({'margin-top': topTextMargin.toString() + 'px'});
+	$('#webcam').css({'margin-top': topVideoMargin.toString() + 'px'});
+}
+
+$(document).ready(function() {
+	$(window).on("load resize scroll", fixTopMargin);
+});
+</script>
+
+
+<!-- ------------------------------------ Media OSX Equal Height ----------------------------------- -->
+
+<script>
+function fixHeight() {
+	var contentHeight = $(".media-mac").height();
+
+	$('.fix-height').height(contentHeight);
+}
+
+$(document).ready(function() {
+	var screenWidth = $(window).width();
+	var tabletWidth = 962;
+	
+	if(screenWidth > tabletWidth){
+		$(window).on("load resize scroll", fixHeight);
+	} else {
+		$('.fix-height').css("height", "100%");
+	}
+});
+</script>
+
+
+<!-- ---------------------------------------- Arrow To Top ---------------------------------------- -->
+
+<script>
+$(document).ready(function() {
+	if($('#back-to-top').length){
+		var scrollTrigger = 300,
+		backToTop = function(){
+			var scrollTop = $(window).scrollTop();
+			if(scrollTop > scrollTrigger){
+				$('#back-to-top').addClass('show');
+			} else {
+				$('#back-to-top').removeClass('show');
+			}
+		};
+		backToTop();
+		$(window).on('scroll', function(){
+			backToTop();
+		});
+		$('#back-to-top').on('click', function(e){
+			e.preventDefault();
+			$('html,body').animate({
+				scrollTop: 0
+			}, 700);
+		});
+	}
+});
+</script>
+
+
+<!-- ------------------------------------ Google Analytics ----------------------------------- -->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-101446807-1', 'auto');ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
